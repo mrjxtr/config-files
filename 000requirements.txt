@@ -1,0 +1,53 @@
+############################
+# DATA ANALYTICS LIBRARIES #
+############################
+
+# Numerical Computing
+numpy
+
+# Data Manipulation and Analysis
+pandas
+
+# Excel File Handling
+openpyxl
+
+# Excel File Reading
+xlrd
+
+# Data Visualization:
+
+# 2D Plotting and Data Visualization
+matplotlib
+
+# Statistical Data Visualization
+seaborn
+
+# Interactive Visualizations
+plotly
+
+# Scientific and Statistical Computing:
+
+# Scientific Computing and Advanced Math
+scipy
+
+# Statistical Modeling and Hypothesis Testing
+statsmodels
+
+# Basic Machine Learning Algorithms
+scikit-learn
+
+# Jupyter Ecosystem:
+
+# Jupyter Notebook Interface
+notebook
+
+# IPython Kernel for Jupyter
+ipykernel
+
+# Jupyter Notebook Conversion
+nbconvert
+
+# Other Utilities:
+
+# YAML File Handling
+pyyaml
