@@ -151,7 +151,7 @@
   "explorer.confirmDragAndDrop": false,
 
   // Terminal Settings
-  "terminal.integrated.defaultProfile.windows": "pwsh",
+  "terminal.integrated.defaultProfile.windows": "zsh",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.gpuAcceleration": "on",
@@ -198,6 +198,7 @@
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
   "gitlens.codeLens.enabled": false,
+  "git.autorefresh": true,
 
   // SCM Settings
   "scm.diffDecorations": "gutter",
@@ -480,7 +481,8 @@
     "<C-f>": false,
     "<C-j>": false,
     "<C-k>": false,
-    "<C-p>": false
+    "<C-p>": false,
+    "<C-m>": false
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -496,9 +498,11 @@
   "cSpell.userWords": [
     "actuals",
     "astype",
+    "autorefresh",
     "charliermarsh",
     "codeium",
     "codesnap",
+    "customtkinter",
     "davinci",
     "decrypter",
     "dotenv",
@@ -514,6 +518,7 @@
     "getenv",
     "hyperparameters",
     "incsearch",
+    "interactable",
     "ipynb",
     "joblib",
     "JXTR",
@@ -530,6 +535,7 @@
     "Neighbourhoods",
     "nunique",
     "openai",
+    "pady",
     "pltc",
     "plts",
     "preprocess",
