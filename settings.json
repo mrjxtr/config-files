@@ -151,7 +151,7 @@
   "explorer.confirmDragAndDrop": false,
 
   // Terminal Settings
-  "terminal.integrated.defaultProfile.windows": "zsh",
+  "terminal.integrated.defaultProfile.windows": "pwsh",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.gpuAcceleration": "on",
@@ -460,13 +460,17 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.leader": "<space>",
-  "vim.visualModeKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Split Panes
     {
-      "before": ["leader", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    // Save and Quit
     {
       "before": ["leader", "w"],
       "commands": ["workbench.action.files.save"]
@@ -474,6 +478,26 @@
     {
       "before": ["leader", "q"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // File Explorer
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    // Find Files
+    {
+      "before": ["leader", "space"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
     }
   ],
   "vim.handleKeys": {
@@ -535,10 +559,12 @@
     "Neighbourhoods",
     "nunique",
     "openai",
+    "outdent",
     "pady",
     "pltc",
     "plts",
     "preprocess",
+    "Pseudocode",
     "pwsh",
     "pytest",
     "Scikit",
@@ -551,6 +577,7 @@
     "Upwork",
     "venv",
     "vscodevim",
+    "vsplit",
     "windir",
     "xlabel",
     "ylabel"
