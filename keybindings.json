@@ -50,16 +50,6 @@
   // File Explorer
 
   {
-    "key": "space e",
-    "command": "workbench.view.explorer",
-    "when": "vim.mode != 'Insert' && viewContainer.workbench.view.explorer.enabled && (editorTextFocus || !inputFocus) && !filesExplorerFocus"
-  },
-  {
-    "key": "ctrl+shift+e",
-    "command": "-workbench.view.explorer",
-    "when": "viewContainer.workbench.view.explorer.enabled"
-  },
-  {
     "key": "r",
     "command": "renameFile",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
