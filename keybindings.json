@@ -7,11 +7,13 @@
   },
   {
     "key": "ctrl-l",
-    "command": "workbench.action.navigateRight"
+    "command": "workbench.action.navigateRight",
+    "when": "vim.mode != 'Visual' && vim.mode != 'VisualLine'"
   },
   {
     "key": "ctrl-k",
-    "command": "workbench.action.navigateUp"
+    "command": "workbench.action.navigateUp",
+    "when": "vim.mode != 'Visual' && vim.mode != 'VisualLine'"
   },
   {
     "key": "ctrl-j",
@@ -47,6 +49,16 @@
 
   // File Explorer
 
+  {
+    "key": "space e",
+    "command": "workbench.view.explorer",
+    "when": "vim.mode != 'Insert' && viewContainer.workbench.view.explorer.enabled && (editorTextFocus || !inputFocus) && !filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
   {
     "key": "r",
     "command": "renameFile",
@@ -103,5 +115,24 @@
         "workbench.action.closeOtherEditors"
       ]
     }
+  },
+
+  // Primary and Secondary Sidebar
+
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
   }
 ]
