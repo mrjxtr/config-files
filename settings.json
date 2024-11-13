@@ -15,10 +15,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[django-html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -29,6 +29,9 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "emmet.triggerExpansionOnTab": true,
+  "ruff.lineLength": 80,
+  "ruff.lint.enable": false,
   "prettier.tabWidth": 2,
   "editor.accessibilitySupport": "off",
   "editor.formatOnPaste": true,
@@ -151,7 +154,7 @@
   "explorer.confirmDragAndDrop": false,
 
   // Terminal Settings
-  "terminal.integrated.defaultProfile.windows": "pwsh",
+  "terminal.integrated.defaultProfile.windows": "zsh",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.gpuAcceleration": "on",
@@ -267,8 +270,8 @@
       "editorHoverWidget.border": "#404040",
       "editorIndentGuide.activeBackground1": "#606060",
       "editorIndentGuide.background1": "#404040",
-      "editorLineNumber.activeForeground": "#cccccc",
-      "editorLineNumber.foreground": "#606060",
+      "editorLineNumber.activeForeground": "#e0e0e0",
+      "editorLineNumber.foreground": "#808080",
       "editorPane.background": "#000000",
       "editor.selectionBackground": "#647c8b9d",
       "editorStickyScroll.border": "#404040",
@@ -415,12 +418,14 @@
   "extensions.autoUpdate": false,
   "extensions.experimental.deferredStartupFinishedActivation": true,
 
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": true
+  // Codeium Settings
+  "codeium.enableConfig": {
+    "*": true
   },
+  "codeium.enableExplainProblem": false,
+  "codeium.enableSearch": true,
+  "codeium.enableCodeLens": false,
+  "codeium.enableCommandSideHintEducation": false,
 
   // AutoDocstring Settings
   "autoDocstring.includeExtendedSummary": true,
@@ -428,15 +433,11 @@
 
   // SQLTools Settings
   "sqltools.connections": [],
+  "sqltools.useNodeRuntime": false,
 
   // Markdown Preview Enhanced Settings
   "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
-
-  // VSCode Pets Settings
-  "vscode-pets.petSize": "small",
-  "vscode-pets.petType": "dog",
-  "vscode-pets.throwBallWithMouse": true,
 
   // CodeSnap Settings
   "codesnap.backgroundColor": "#aaaaaa",
@@ -458,6 +459,7 @@
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
+  "vim.mouseSelectionGoesIntoVisualMode": true,
   "vim.useCtrlKeys": true,
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -478,6 +480,10 @@
     {
       "before": ["leader", "q"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "k", "f"],
+      "commands": ["workbench.action.closeFolder"]
     },
     // File Explorer
     {
@@ -502,11 +508,13 @@
   ],
   "vim.handleKeys": {
     "<C-b>": false,
+    "<C-e>": false,
     "<C-f>": false,
     "<C-j>": false,
     "<C-k>": false,
     "<C-p>": false,
-    "<C-m>": false
+    "<C-m>": false,
+    "<C-i>": false
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -539,16 +547,19 @@
     "fernet",
     "Fernet",
     "figsize",
+    "flaskapp",
     "getenv",
     "hyperparameters",
     "incsearch",
     "interactable",
     "ipynb",
     "joblib",
+    "jsonify",
     "JXTR",
     "LICENCE",
     "linestyle",
     "linewidth",
+    "Lumacad",
     "Matplotlib",
     "mrjxtr",
     "multiclass",
@@ -571,6 +582,7 @@
     "scminput",
     "Scrapy",
     "Seaborn",
+    "sqlalchemy",
     "sqltools",
     "suptitle",
     "Sysnative",
