@@ -66,7 +66,7 @@
     "reports": "enum",
     "venv": "environment"
   },
-  "material-icon-theme.folders.color": "#fdd835",
+  "material-icon-theme.folders.color": "#90a4ae",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.saturation": 1,
@@ -520,10 +520,16 @@
     "vscodevim.vim": 1
   },
 
-  // Custom Css and JS Settings
+  // Custom CSS and JS Settings (Linux)
   "vscode_custom_css.imports": [
-    "file:///C:/Users/JXTR/AppData/Roaming/Code/User/custom-settings.css",
-    "file:///D:/JXTR/Documents/custom-vscode-script.js"
+    "file:///home/mrjxtr/Documents/custom-vscode-conf/custom-settings.css",
+    "file:///home/mrjxtr/Documents/custom-vscode-conf/custom-vscode-script.js"
+  ],
+
+  // Custom CSS and JS Settings (Windows)
+  // "vscode_custom_css.imports": [
+  //   "file:///C:/Users/JXTR/AppData/Roaming/Code/User/custom-settings.css",
+  //   "file:///D:/JXTR/Documents/custom-vscode-script.js"
   ],
 
   // cSpell Settings
